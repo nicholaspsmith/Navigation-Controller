@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="1152" y="1141"/>
         </scene>
-        <!--View Controller-->
+        <!--BlueVC-->
         <scene sceneID="jFv-WO-PjR">
             <objects>
-                <viewController id="DTl-g6-13R" sceneMemberID="viewController">
+                <viewController id="DTl-g6-13R" customClass="BlueVC" customModule="nav_controller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5M7-Pb-61l"/>
                         <viewControllerLayoutGuide type="bottom" id="b7E-mT-7eH"/>
@@ -96,6 +96,20 @@
                     <view key="view" contentMode="scaleToFill" id="XK5-9P-Dlz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aO-49-6Hs">
+                                <rect key="frame" x="261" y="272" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="klm-Lj-zwa"/>
+                                </constraints>
+                                <state key="normal" title="Pop To Red">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popToRoot:" destination="DTl-g6-13R" eventType="touchUpInside" id="NBa-Nj-0jt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.75631876689999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>

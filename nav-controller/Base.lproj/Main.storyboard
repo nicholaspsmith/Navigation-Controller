@@ -18,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoo-ko-cET">
-                                <rect key="frame" x="277" y="253" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="284" y="253" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="8h8-xJ-Cpt" kind="show" id="sz5-1h-8us"/>
                                 </connections>
@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="329" y="1089"/>
         </scene>
-        <!--View Controller-->
+        <!--YellowVC-->
         <scene sceneID="Zpt-74-g7I">
             <objects>
-                <viewController id="8h8-xJ-Cpt" sceneMemberID="viewController">
+                <viewController id="8h8-xJ-Cpt" customClass="YellowVC" customModule="nav_controller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UPG-s3-gwb"/>
                         <viewControllerLayoutGuide type="bottom" id="M1R-nq-bJm"/>
@@ -64,10 +64,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hv-Sk-Ga9">
-                                <rect key="frame" x="277" y="234" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="284" y="234" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="DTl-g6-13R" kind="show" id="fep-Fm-X70"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8P-7q-c4r">
+                                <rect key="frame" x="285" y="313" width="30" height="30"/>
+                                <state key="normal" title="Pop"/>
+                                <connections>
+                                    <action selector="popVC:" destination="8h8-xJ-Cpt" eventType="touchUpInside" id="CDm-ZR-Nnr"/>
                                 </connections>
                             </button>
                         </subviews>
